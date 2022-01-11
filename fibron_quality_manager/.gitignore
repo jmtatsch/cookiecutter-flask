@@ -25,7 +25,7 @@ pip-log.txt
 .tox
 nosetests.xml
 
-# si
+# Translations
 *.mo
 
 # Mr Developer
@@ -39,12 +39,20 @@ output/*/index.html
 
 # Sphinx
 docs/_build
-README.html
 
-# Cookiecutter
-output/
+.webassets-cache
 
-my_flask_app/
-bower_components
+# Virtualenvs
+env/
 
-.DS_Store
+# npm
+/node_modules/
+
+# webpack-built files
+/fibron_quality_manager/static/build/
+
+# Configuration
+.env
+
+# Development database
+*.db

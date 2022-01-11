@@ -1,0 +1,8 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="container">
+    <h1>Manage Spools</h1>
+    {{ table }}
+    <a href="{{ url_for('user.add_spool') }}">Add a new spool</a>
+</div>
+{% endblock %}

@@ -1,0 +1,14 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="container">
+    <h1>Add Spool</h1>
+    <form id="add_spool" class="form form-add-spool" method="POST" action="" role="form">
+        {{ form.csrf_token }}
+        <div class="form-group">
+            {{form.description.label}}
+            {{form.description(placeholder="name", class_="form-control")}}
+        </div>
+        <p><input class="btn btn-primary" type="submit" value="Add"></p>
+    </form>
+</div>
+{% endblock %}

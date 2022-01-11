@@ -1,0 +1,35 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="container">
+    <h1>Manage Jobs</h1>
+    <!-- 
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Type</th>
+                <th>Length</th>
+                <th>Diameter</th>
+                <th>Layers</th>
+
+            </tr>
+        </thead>
+
+        <tbody>
+            {% for job in jobs %}
+            <tr>
+                <td>{{ job.name }}</td>
+                <td>{{ job.product_type }}</td>
+                <td>{{ job.product_length }}</td>
+                <td>{{ job.product_diameter }}</td>
+                <td>{{ job.product_layers }}</td>
+
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+     -->
+    {{ table }}
+    <a href="{{ url_for('user.add_job') }}">Add a new job</a>
+</div>
+{% endblock %}
